@@ -1,0 +1,11 @@
+<div>
+    <label for="inputString">Enter a string:</label>
+    <input id="inputString" [(ngModel)]="inputString" placeholder="Enter a string"/>
+  </div>
+  <div>
+    <button (click)="reverseString()">Reverse String</button>
+  </div>
+  <div>
+    <p>Reversed String: {{ reversedString }}</p>
+  </div>
+  

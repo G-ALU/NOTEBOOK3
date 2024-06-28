@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+  <span>Notes</span>
+  <span class="spacer"></span>
+  <button mat-button routerLink="/add-note">Add Note</button>
+</mat-toolbar>
+
+<div class="note-list">
+  <mat-card *ngFor="let note of notes" routerLink="/note/{{note.id}}">
+    <mat-card-title>{{ note.title }}</mat-card-title>
+    <mat-card-content>{{ note.content }}</mat-card-content><br><br><br>
+    <p>Press note to update or delete</p>
+  </mat-card>
+</div>

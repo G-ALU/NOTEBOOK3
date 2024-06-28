@@ -1,0 +1,78 @@
+/* Set background color for the whole page */
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the toolbar */
+mat-toolbar {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Spacer for toolbar */
+.spacer {
+  flex: 1 1 auto;
+}
+
+/* Style the toolbar button */
+mat-toolbar button {
+  background-color: #6200ea;
+  color: #ffffff;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+mat-toolbar button:hover {
+  background-color: #3700b3;
+}
+
+/* Style the note list container */
+.note-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Style individual note cards */
+mat-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  max-width: 300px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+mat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Style the card title */
+mat-card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+/* Style the card content */
+mat-card-content {
+  font-size: 16px;
+  color: #ffffff;
+}

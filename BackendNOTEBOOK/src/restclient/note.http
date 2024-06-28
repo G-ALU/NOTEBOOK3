@@ -1,0 +1,28 @@
+### GET ALL NOTES
+GET http://localhost:3000/notes
+
+### ADD A NOTE
+
+POST http://localhost:3000/notes
+Content-Type: application/json
+
+{
+  "title": "Reading Among us",
+  "content": "The first three chapters"
+}
+
+### GET A NOTE
+GET http://localhost:3000/notes/fbd0ed30-3cbe-4efd-ab4c-0f49cdb7a761
+
+### UPDATE A NOTE
+
+PUT http://localhost:3000/notes/24ac7ee8-315b-4e87-a021-c9814678a9cc
+Content-Type: application/json
+
+{
+  "title": "Fight night Champion",
+  "content": "Fightnight"
+}
+
+### DELETE A NOTE
+DELETE http://localhost:3000/notes/fbd0ed30-3cbe-4efd-ab4c-0f49cdb7a761

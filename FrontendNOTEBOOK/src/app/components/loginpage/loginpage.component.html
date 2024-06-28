@@ -1,0 +1,33 @@
+<app-nav-bar></app-nav-bar>
+
+<div class="container">
+    <div class="login-container">
+        <form action="">
+            <div class="heading input-group">
+                <h2>login to NotesApp</h2>
+            </div>
+            <div class="input-group">
+                <label for="">email *</label>
+                <input type="email" placeholder="example@email.com" autocomplete="off">
+                <p id="email-error"></p>
+            </div>
+            <div class="input-group">
+                <label for="">password *</label>
+                <input type="password" placeholder="********" autocomplete="off">
+                <p id="password-error"></p>
+            </div>
+            <div class="input-group">
+                <div class="remember-me">
+                    <input type="checkbox" name="" id="">
+                    <label for="">remember me</label>
+                </div><br>
+                <a href="#">forgot password?</a>
+            </div>
+            <div class="input-group buttons">
+                <button routerLink= '/userdashboard' id="login-btn">sign in</button>
+                <h2>or</h2>
+                <button  routerLink = '/register'  id="register-btn">register to create account</button>
+            </div>
+        </form>
+    </div>
+</div>
